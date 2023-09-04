@@ -23,7 +23,7 @@ Any service that subscribes to an OpenCRVS webhook must:
 4. Respond to the webhook event as you wish internally, and request further details from OpenCRVS via a [Record Search](record-search-clients.md) if you need to.
 
 {% hint style="info" %}
-You can use our [Postman collections](https://github.com/opencrvs/opencrvs-farajaland/tree/master/postman) to test webhook API functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
+You can use our [Postman collections](https://github.com/opencrvs/opencrvs-countryconfig/tree/master/postman) to test webhook API functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
 {% endhint %}
 
 {% hint style="info" %}

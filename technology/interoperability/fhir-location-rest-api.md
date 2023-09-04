@@ -47,7 +47,7 @@ During the configuration step of OpenCRVS you import all administrative areas wi
 ### Using the FHIR Location REST API
 
 {% hint style="info" %}
-You can use our [Postman collections](https://github.com/opencrvs/opencrvs-farajaland/tree/master/postman) to test FHIR Location API functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
+You can use our [Postman collections](https://github.com/opencrvs/opencrvs-countryconfig/tree/master/postman) to test FHIR Location API functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
 {% endhint %}
 
 A simple test harness for the FHIR Location API is also available in [Swagger](https://swagger.io/) at the following URL:

@@ -11,7 +11,7 @@ Now that you have created a client, when you want to perform an API request, you
 {% endhint %}
 
 {% hint style="info" %}
-You can use our [Postman collections](https://github.com/opencrvs/opencrvs-farajaland/tree/master/postman) to test all client functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
+You can use our [Postman collections](https://github.com/opencrvs/opencrvs-countryconfig/tree/master/postman) to test all client functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
 {% endhint %}
 
 **URL**

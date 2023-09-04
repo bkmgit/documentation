@@ -181,4 +181,4 @@ Client [npm](https://www.npmjs.com/) dependencies and enablers include:
 
 OpenCRVS Core displays [Codecov](https://about.codecov.io/) enforced 80% unit testing coverage on git.  We supply example e2e UI test scripts using [Cypress](https://www.cypress.io/) and cover the main registration business functionality in those tests.
 
-Because the OpenCRVS Form UI is configurable to your country, the end-to-end testing scripts are located in the [example country configuration server for Farajaland](https://github.com/opencrvs/opencrvs-farajaland/tree/master/cypress) so you can custmise them depending on the structure of your published form.
+Because the OpenCRVS Form UI is configurable to your country, the end-to-end testing scripts are located in our [example country configuration server for Farajaland](https://github.com/opencrvs/opencrvs-farajaland/tree/master/cypress) so you can copy this approach and customise them depending on the structure of your published form.

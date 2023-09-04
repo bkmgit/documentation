@@ -15,7 +15,7 @@ When Event Notifications are received in OpenCRVS, they are audited accordingly 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-11 at 15.40.23.png" alt=""><figcaption><p>Record Audit view for an Event Notification</p></figcaption></figure>
 
 {% hint style="info" %}
-You can use our [Postman collections](https://github.com/opencrvs/opencrvs-farajaland/tree/master/postman) to test Event Notification API functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
+You can use our [Postman collections](https://github.com/opencrvs/opencrvs-countryconfig/tree/master/postman) to test Event Notification API functionality. [Postman](https://www.postman.com/) is a tool you can download to test API access before building your integrations.
 {% endhint %}
 
 
@@ -32,7 +32,7 @@ With the token as an authorization header, the following request will submit a m
 
 Parameters in handlebars must be substituted with specific data that requires further explanation below.  Other data is given as an example, but you can refer to our [standards](../standards/) to set the values correctly depending on the birth or death.
 
-Refer to our [Postman collections](https://github.com/opencrvs/opencrvs-farajaland/tree/master/postman) to see a payload for a full birth declaration, minimal and full death declaration.
+Refer to our [Postman collections](https://github.com/opencrvs/opencrvs-countryconfig/tree/master/postman) to see a payload for a full birth declaration, minimal and full death declaration.
 
 ```
   POST https://gateway.<your_domain>/notification

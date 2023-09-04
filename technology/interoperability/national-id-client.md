@@ -46,7 +46,7 @@ MOSIP functionality contains the default functionality with some extra functiona
 
 #### Birth events:
 
-OpenCRVS can let MOSIP know of any birth that occurs in the country so that operations can be put in place to provide a National ID number for the child. &#x20;
+OpenCRVS can let MOSIP know of any birth that occurs in the country so that operations can be put in place to provide a National ID number for the child. MOSIP integration requires installation assistance from our core team.&#x20;
 
 The [MOSIP Mediator](https://github.com/opencrvs/mosip-mediator) will return a unique token (**UINTOKEN**) that will be saved into the child's FHIR Patient details [here](https://github.com/opencrvs/opencrvs-farajaland/blob/1d8017657d074c9e83f07c01215ab4736e513d28/src/features/mediators/mosip-openhim-mediator/handler.ts#L26) as an additional identifier.  **This token is unique for the individual for life**.  In this way it can be used when the individual dies to connect the birth and death event together and invalidate a death.
 
