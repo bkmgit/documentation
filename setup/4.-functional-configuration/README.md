@@ -11,11 +11,10 @@
 [3.3-set-up-a-server-hosted-environment](../3.-installation/3.3-set-up-a-server-hosted-environment/ "mention")
 
 * Only a National System Admin can configure these settings
-* They are provisioned independently for every environment you are hosting: Staging, QA & Production.  You may want to make a new factory reset backup when you are finished to make it easier to deploy to new environments. [3.2.6-create-factory-reset-reference-data-backups.md](../3.-installation/3.2-set-up-your-own-country-configuration/3.2.6-create-factory-reset-reference-data-backups.md "mention")
+* They are provisioned independently for every environment you are hosting: Staging, QA & Production.  You may want to make a new factory reset backup when you are finished to make it easier to deploy to new environments.&#x20;
 
 This section introduces the configuration steps that your National System Admin will be required to do: &#x20;
 
-1. Configure the application settings (registration time periods and fees)
-2. Configure declaration forms
-3. Configure certificate templates
-4. Create system users
+1. Configure the application settings
+2. Configure registration time periods and fees
+3. Create system users
