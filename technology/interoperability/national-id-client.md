@@ -48,7 +48,7 @@ OpenCRVS can let MOSIP know of any birth that occurs in the country so that oper
 
 The [MOSIP Mediator](https://github.com/opencrvs/mosip-mediator) will return a unique token (**UINTOKEN**) that will be saved into the child's FHIR Patient details [here](https://github.com/opencrvs/opencrvs-farajaland/blob/1d8017657d074c9e83f07c01215ab4736e513d28/src/features/mediators/mosip-openhim-mediator/handler.ts#L26) as an additional identifier. **This token is unique for the individual for life**. In this way it can be used when the individual dies to connect the birth and death event together and invalidate a death.
 
-The [MOSIP Mediator](https://github.com/opencrvs/mosip-mediator) will also return an application ID (**MOSIP\_AID**) that can be printed on a birth [certificate](../../setup/3.-installation/3.2-set-up-your-own-country-configuration/4.4-configure-a-certificate-template.md) using the certificate handlebar **\{{mosipAid\}}**. A baby is too young for biometrics to be captured in National ID processing, but this application ID allows the child's National ID application to be retrieved in the future and converted into a MOSIP National ID (VID / UIN) at any time.
+The [MOSIP Mediator](https://github.com/opencrvs/mosip-mediator) will also return an application ID (**MOSIP\_AID**) that can be printed on a birth [certificate](broken-reference) using the certificate handlebar **\{{mosipAid\}}**. A baby is too young for biometrics to be captured in National ID processing, but this application ID allows the child's National ID application to be retrieved in the future and converted into a MOSIP National ID (VID / UIN) at any time.
 
 #### Death events:
 

@@ -1,12 +1,12 @@
 # 3.2.5 Set up application settings
 
-The next step is to configure some functional application settings. Some of these settings can be changed later using the OpenCRVS [Functional Configuration](../../4.-functional-configuration) UI by a National System Administrator. Others must be configured now during installation and cannot be changed in production.
+The next step is to configure some functional application settings. Some of these settings can be changed later using the OpenCRVS [Functional Configuration](../../../4.-functional-configuration) UI by a National System Administrator. Others must be configured now during installation and cannot be changed in production.
 
-You will be referring to the Config: Application Settings Excel sheet that would have been prepared in [section 2: Gather requirements](../../2.-gather-requirements.md).
+You will be referring to the Config: Application Settings Excel sheet that would have been prepared in [section 2: Gather requirements](../../../2.-gather-requirements.md).
 
 ## 1. Prepare global functional settings
 
-Prepare your _**application-config-default.ts**_ source file. This is a Typescript file that is loaded in the application via an API explained in [section 3.2.9 Countryconfig APIs explained](3.2.9-countryconfig-apis-explained).
+Prepare your _**application-config-default.ts**_ source file. This is a Typescript file that is loaded in the application via an API explained in [section 3.2.9 Countryconfig APIs explained](../3.2.9-countryconfig-apis-explained).
 
 Using our [application-config-default.ts](https://github.com/opencrvs/opencrvs-countryconfig/blob/develop/src/api/application/application-config-default.ts) file as an example, update the settings according to your needs.&#x20;
 
@@ -24,7 +24,7 @@ Using our [application-config-default.ts](https://github.com/opencrvs/opencrvs-c
     },
     PRINT_IN_ADVANCE: true
   }
-</code></pre> | These are your registration time periods and fees for **birth**, explained in more detail [here](../../4.-functional-configuration/4.2-configure-registration-periods-and-fees.md).  PRINT\_IN\_ADVANCE allows you to print  certificates in advance for collection.  You can disable this by setting it to false, if you operationally want to enforce an ID check from a recipient before printing a copy.                                                                                                                                                                              |
+</code></pre> | These are your registration time periods and fees for **birth**, explained in more detail [here](../../../4.-functional-configuration/4.2-configure-registration-periods-and-fees.md).  PRINT\_IN\_ADVANCE allows you to print  certificates in advance for collection.  You can disable this by setting it to false, if you operationally want to enforce an ID check from a recipient before printing a copy.                                                                                                                                                                           |
 | <pre><code>DEATH: {
     REGISTRATION_TARGET: 45,
     FEE: {
@@ -33,7 +33,7 @@ Using our [application-config-default.ts](https://github.com/opencrvs/opencrvs-c
     },
     PRINT_IN_ADVANCE: true
   }
-</code></pre>                                                      | These are your registration time periods and fees for **death**, explained in more detail [here](../../4.-functional-configuration/4.2-configure-registration-periods-and-fees.md).  PRINT\_IN\_ADVANCE allows you to print  certificates in advance for collection.  You can disable this by setting it to false, if you operationally want to enforce an ID check from a recipient before printing a copy.                                                                                                                                                                              |
+</code></pre>                                                      | These are your registration time periods and fees for **death**, explained in more detail [here](../../../4.-functional-configuration/4.2-configure-registration-periods-and-fees.md).  PRINT\_IN\_ADVANCE allows you to print  certificates in advance for collection.  You can disable this by setting it to false, if you operationally want to enforce an ID check from a recipient before printing a copy.                                                                                                                                                                           |
 | <pre><code>MARRIAGE_REGISTRATION
 </code></pre>                                                                                                                                                          | **This cannot be amended later in the UI and must be configured here.** In OpenCRVS v1.3 we have released marriage registration in BETA.  Set this property to true in order to demonstrate marriage registration as a proof of concept.  Get in touch with us at [team@opencrvs.org](mailto:team@opencrvs.org) if you wish to use marriage registration in production.  We require to complete marriage performance analytics and searching in order to release this feature in OpenCRVS v1.4.  **It is not yet production ready.**                                                      |
 | <pre><code>MARRIAGE: {
@@ -44,7 +44,7 @@ Using our [application-config-default.ts](https://github.com/opencrvs/opencrvs-c
     },
     PRINT_IN_ADVANCE: true
   }
-</code></pre>                                                 | These are your registration time periods and fees for **marriage**, explained in more detail [here](../../4.-functional-configuration/4.2-configure-registration-periods-and-fees.md).  PRINT\_IN\_ADVANCE allows you to print  certificates in advance for collection.  You can disable this by setting it to false, if you operationally want to enforce an ID check from a recipient before printing a copy.                                                                                                                                                                           |
+</code></pre>                                                 | These are your registration time periods and fees for **marriage**, explained in more detail [here](../../../4.-functional-configuration/4.2-configure-registration-periods-and-fees.md).  PRINT\_IN\_ADVANCE allows you to print  certificates in advance for collection.  You can disable this by setting it to false, if you operationally want to enforce an ID check from a recipient before printing a copy.                                                                                                                                                                        |
 | <pre><code>DATE_OF_BIRTH_UNKNOWN
 </code></pre>                                                                                                                                                          | **This cannot be amended later in the UI and must be configured here.**  In some countries, individuals do not know their date of birth.  If you wish to enable that individuals are allowed to submit their ages in your declaration forms rather than a date of birth, set this to true.  **Please note that those individuals will have their days and months of birth automatically set to the 1st January in the system in that case.**                                                                                                                                              |
 | <pre><code>CURRENCY: {
@@ -107,7 +107,7 @@ As you can see, the React Login application uses the URL values to understand ho
 
 **COUNTRY**: Set the [Alpha 3 country code](https://www.iban.com/country-codes) to be the same as the value you used when importing the set up files in step 3.2.5. The Login app needs to convert users phone numbers into MSISDN numbers using an Alpha 3 country code in case the user forgets their login details and requires an SMS reset.
 
-**LANGUAGES:** This property allows you to customise the global language options. This value is a comma separated string of [ISO 639-1](https://en.wikipedia.org/wiki/List\_of\_ISO\_639-1\_codes) language codes for every translation you wish to set up in step [3.2.9.1 Managing language content](3.2.9-countryconfig-apis-explained/3.2.9.1-managing-language-content.md).
+**LANGUAGES:** This property allows you to customise the global language options. This value is a comma separated string of [ISO 639-1](https://en.wikipedia.org/wiki/List\_of\_ISO\_639-1\_codes) language codes for every translation you wish to set up in step [3.2.9.1 Managing language content](../3.2.9-countryconfig-apis-explained/3.2.9.1-managing-language-content.md).
 
 For example, if you wanted to support Spanish and English, with Spanish being the default this string should be:
 
@@ -127,7 +127,7 @@ For example, if you wanted to support Spanish and English, with Spanish being th
 es:Español,en:English
 ```
 
-The application can log errors to Sentry should it encounter any problems accessing the backend.  _LOGROCKET will be deprecated in OpenCRVS v1.4._  Leave these options alone as empty strings as they are not used when running in localhost. They are populated dynamically from Github secrets in the server [deploy step here](../3.3-set-up-a-server-hosted-environment/3.3.6-deploy-automated-and-manual.md).
+The application can log errors to Sentry should it encounter any problems accessing the backend.  _LOGROCKET will be deprecated in OpenCRVS v1.4._  Leave these options alone as empty strings as they are not used when running in localhost. They are populated dynamically from Github secrets in the server [deploy step here](../../3.3-set-up-a-server-hosted-environment/3.3.6-deploy-automated-and-manual.md).
 
 **Login app - server:** [**login-config.prod.js**](https://github.com/opencrvs/opencrvs-countryconfig/blob/develop/src/login-config.prod.js)
 
@@ -148,7 +148,7 @@ window.config = {
 
 As you ca**n see, the server config file contains the same settings.**
 
-You may notice that localhost is replaced by your domain name dynamically in handlebars. **Do not edit the URLs.** We have taken care of this substitution for you in step [3.3.6 Deploy](../3.3-set-up-a-server-hosted-environment/3.3.6-deploy-automated-and-manual.md)
+You may notice that localhost is replaced by your domain name dynamically in handlebars. **Do not edit the URLs.** We have taken care of this substitution for you in step [3.3.6 Deploy](../../3.3-set-up-a-server-hosted-environment/3.3.6-deploy-automated-and-manual.md)
 
 You must set the **COUNTRY, LANGUAGES & AVAILABLE\_LANGUAGES\_SELECT** values only.
 
@@ -178,7 +178,7 @@ window.config = {
 }
 ```
 
-Following the same process as you did for the local development Login app config file, you must set the **COUNTRY, LANGUAGES & AVAILABLE\_LANGUAGES\_SELECT** values, and can optionally uncomment **LEADERBOARDS\_DASHBOARD\_URL, REGISTRATIONS\_DASHBOARD\_URL** and **STATISTICS\_DASHBOARD\_URL** if you wish to run metabase dashboards locally.  Refer to step **3.2.5.1 Configuring Metabase Dashboards** for more instructions.
+Following the same process as you did for the local development Login app config file, you must set the **COUNTRY, LANGUAGES & AVAILABLE\_LANGUAGES\_SELECT** values, and can optionally uncomment **LEADERBOARDS\_DASHBOARD\_URL, REGISTRATIONS\_DASHBOARD\_URL** and **STATISTICS\_DASHBOARD\_URL** if you wish to run metabase dashboards locally.  Refer to step [3.2.5.1 Configuring Metabase Dashboards](3.2.5.1-configuring-metabase-dashboards.md) for more instructions.
 
 **Client app - server:** [**client-config.prod.js**](https://github.com/opencrvs/opencrvs-countryconfig/blob/develop/src/client-config.prod.js)
 
