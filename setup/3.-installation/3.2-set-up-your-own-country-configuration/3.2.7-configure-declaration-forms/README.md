@@ -60,10 +60,3 @@ But what if you just want to add an optional custom field after going live?  Or 
 If you are adding an optional, custom field post live then, as long as it is not required \* for registration, then it should be OK for you to do this.  But we do not guarantee this.
 {% endhint %}
 
-### Configuring an event form
-
-Take a brief look at the directory structure for a form configuration for an event:
-
-![](<../../../../.gitbook/assets/Screenshot 2023-09-07 at 16.42.23.png>)
-
-The index.ts
