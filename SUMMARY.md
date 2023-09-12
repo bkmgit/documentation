@@ -98,7 +98,7 @@
     * [3.2.6 Configure certificate templates](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.6-configure-certificate-templates.md)
     * [3.2.7 Configure declaration forms](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.7-configure-declaration-forms/README.md)
       * [3.2.7.1 Configuring an event form](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.7-configure-declaration-forms/3.2.7.1-configuring-an-event-form.md)
-    * [3.2.8 Seeding your local database](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.8-seeding-your-local-database/README.md)
+    * [3.2.8 Seeding your local development environment database](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.8-seeding-your-local-database/README.md)
       * [3.2.8.1 Clearing your local development environment database](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.8-seeding-your-local-database/3.2.8.1-clearing-and-restoring-a-local-environment-to-factory-reset-data.md)
     * [3.2.9 Countryconfig APIs explained](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.9-countryconfig-apis-explained/README.md)
       * [3.2.9.1 Managing language content](setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.9-countryconfig-apis-explained/3.2.9.1-managing-language-content.md)
