@@ -22,3 +22,7 @@ After seeding, the OpenHIM password is reset to the default username: **root@ope
 {% endhint %}
 
 To seed a server, follow the instructions [here](../../3.3-set-up-a-server-hosted-environment/3.3.7-seeding-and-clearing-data-on-a-server.md).
+
+{% hint style="success" %}
+**Now that your database has been seeded, you have completed the country configuration and you can log in to OpenCRVS!**  Proceed to the next step to learn more about some of the important API endpoints exposed by the running countryconfig service.
+{% endhint %}
