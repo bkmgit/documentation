@@ -106,7 +106,7 @@ cd <path on your environment>/opencrvs-<your country>
 Refer to our release notes in order to understand breaking changes
 {% endhint %}
 
-8\. If you are running OpenCRVS locally, simply [start OpenCRVS](../../../setup/3.-installation/3.1-set-up-a-development-environment/3.1.3-starting-and-stopping-opencrvs.md). Migrations will automatically run on your data and you have finished upgrading OpenCRVS locally. Proceed to the next section if you have already deployed OpenCRVS to a remote server cluster.
+5\. If you are running OpenCRVS locally, simply [start OpenCRVS](../../../setup/3.-installation/3.1-set-up-a-development-environment/3.1.3-starting-and-stopping-opencrvs.md). Migrations will automatically run on your data and you have finished upgrading OpenCRVS locally. Proceed to the next section if you have already deployed OpenCRVS to a remote server cluster.
 
 ### Step 4: Upgrade your server **environments**
 
