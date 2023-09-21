@@ -60,7 +60,7 @@ Please refer to [form migration instructions.](v1.2-to-v1.3-form-migration.md)
 
 ### Step 3: Upgrade your code
 
-The next task really depends upon how much customisation you have made to your country configuration fork as you will be required to merge or rebase your fork with our release branch. **(You must be familiar with the concept of** [**Git merge**](https://git-scm.com/docs/git-merge) **or** [**Git rebase**](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)**)**. Please refer to the [release notes](../v1.1.0-release-notes.md) and our [release process including Gitflow](../) branching approach.
+The next task requires you to pull latest changes in core and our countryconfig repository, resolve conflicts in your countryconfig repository and merge.
 
 {% hint style="info" %}
 Replace the \* with the latest minor hotfix release in all the following steps.
@@ -92,7 +92,7 @@ git pull
 yarn --force
 ```
 
-2\. You will now have the release code. Your next step is to merge or rebase any changes you need from the country configuration repository fork.
+2\. You will now have the core release code. Your next step is to pull countryconfig release code.
 
 3\. Navigate to your forked country configuration repo
 
@@ -100,45 +100,11 @@ yarn --force
 cd <path on your environment>/opencrvs-<your country>
 ```
 
-4\. Ensure that the branches you have set up are ready according to the new forking instructions [here](../../../setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.1-fork-your-own-country-configuration-repository.md). Specifically from [step 9 to 17](../../../setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.1-fork-your-own-country-configuration-repository.md).
-
-{% hint style="info" %}
-If you have made no customisations to the Farajaland country configuration, other than updating your csv files for [administrative divisions](../../../setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.2-set-up-administrative-address-divisions), [offices and health facilities](broken-reference), [employees](../../../setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.4-set-up-employees-for-testing-or-production) and created new [backups](broken-reference), the merge or rebase process should be easy. If you have customised any routes or developed new API integrations, you may need to be a bit more careful with merging conflicts.
-{% endhint %}
-
-5\. Fetch all our latest branches as [**step 17 will have added Farajaland as a remote**](../../../setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.1-fork-your-own-country-configuration-repository.md):
-
-```
-git fetch --all
-```
-
-6\. Checkout your **master-\<your country code>** branch, and merge or rebase from our release.
-
-{% hint style="info" %}
-**It is generally easier to**[ **merge than rebase (advanced)**](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)**.**
-{% endhint %}
+4\. Ensure that the branches you have set up are ready according to your strategy explained [here](../../../setup/3.-installation/3.2-set-up-your-own-country-configuration/3.2.1-fork-your-own-country-configuration-repository.md).  Pull, fix conflicts, merge and test according to your strategy.
 
 {% hint style="warning" %}
-Merge/Rebase note: Prioritise your current backup zip files over our incoming Farajaland backups otherwise you will need to [regenerate your backups](broken-reference) after the process ends. Prioritise incoming changes for any other conflicts and refactor your code if you have developed your own customisations. Refer to our [release notes ](../v1.2.0-release-notes.md)for hints and any new translation keys that you will need to fix conflicts for.
+Refer to our release notes in order to understand breaking changes
 {% endhint %}
-
-```
-git checkout master-<your country alpha3 code>
-```
-
-```
-git merge farajaland/release-v1.3.0
-
-or 
-
-git merge farajaland/master  (Always aligned to the latest release)
-```
-
-```
-yarn --force
-```
-
-7\. _(Optional: if you are actively developing new features in your country configuration)_ Checkout and merge your **master-\<your country code>** branch onto any other Git branches that are appropriate to you such as **develop-\<your country code>** . **Then checkout back to your master-\<your country code> branch before proceeding!**
 
 8\. If you are running OpenCRVS locally, simply [start OpenCRVS](../../../setup/3.-installation/3.1-set-up-a-development-environment/3.1.3-starting-and-stopping-opencrvs.md). Migrations will automatically run on your data and you have finished upgrading OpenCRVS locally. Proceed to the next section if you have already deployed OpenCRVS to a remote server cluster.
 
