@@ -2,12 +2,4 @@
 
 The Farajaland users have been mapped to the OpenCRVS roles in order to support the business process flows.
 
-| Farajaland User             | OpenCRVS Role         | Notes                                                                                            |
-| --------------------------- | --------------------- | ------------------------------------------------------------------------------------------------ |
-| Registrar General           | National Registrar    | This user is added to the HQ Office in Isamba District                                           |
-| National Operations Manager | Performance Manager   | This user is added to the HQ Office in Isamba District                                           |
-| National System Admin       | National System Admin | This user is added to the HQ Office in Isamba District                                           |
-| Registrar                   | Registrar             | This user is added to each District Office in Farajaland                                         |
-| Registration Officer        | Registration Agent    | A number of these users are added to each District Office in Farajaland                          |
-| Community Leader            | Field Agent           | A number of these users are added to each District Office in Farajaland (type: Community Leader) |
-| Local System Admin          | Local System Admin    | This user is added to each District Office in Farajaland                                         |
+<table><thead><tr><th>Farajaland User</th><th data-hidden>OpenCRVS Role</th><th data-hidden>Notes</th></tr></thead><tbody><tr><td>Healthcare Worker<br>Police Office<br>Local Leader<br>Social Worker</td><td>Field Agent</td><td>A number of these users are added to each District Office in Farajaland (type: Community Leader)</td></tr><tr><td>Registrar</td><td>Registrar</td><td>This user is added to each District Office in Farajaland</td></tr><tr><td>Registration Officer</td><td>Registration Agent</td><td>A number of these users are added to each District Office in Farajaland</td></tr><tr><td>Registrar General</td><td>National Registrar</td><td>This user is added to the HQ Office in Isamba District</td></tr><tr><td>National System Admin</td><td>National System Admin</td><td>This user is added to the HQ Office in Isamba District</td></tr><tr><td>Local System Admin</td><td>Local System Admin</td><td>This user is added to each District Office in Farajaland</td></tr><tr><td>National Operations Manager</td><td>Performance Manager</td><td>This user is added to the HQ Office in Isamba District</td></tr></tbody></table>
