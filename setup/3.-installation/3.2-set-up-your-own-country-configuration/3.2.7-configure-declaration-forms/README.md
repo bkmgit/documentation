@@ -20,7 +20,7 @@ We also noticed that despite developing a form configuration UI for non-technica
 
 We eventually accepted that to make the form configuration UI capable of responding to every country's needs would require a massive investment of time and resources that would be better spent developing other features.  Form configuration UI became a sinkhole for development and quality assurance funding to code and review infinite form possibilities.
 
-We therefore decided to re-focus to make form configuration a developer activity.  We spent the past months abstracting away the complex JSON into utility methods in the countryconfig repository and instead make form configuration a strictly-typed: [Typescript](https://www.typescriptlang.org/) development activity thus mitigating the chances of syntax mistakes.
+We therefore decided to dedicate form configuration as developer activity and invest in teh devops experience.  We spent the past months abstracting away the complex JSON into utility methods in the countryconfig repository and instead make form configuration a strictly-typed: [Typescript](https://www.typescriptlang.org/) development activity thus mitigating the chances of syntax mistakes.
 
 In OpenCRVS v1.3 a developer has complete control again over the entire form and can use any form field available in the component library.  Some form fields and pages are still required, but these are clearly marked in the code.
 
