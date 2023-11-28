@@ -139,5 +139,7 @@
   * [v.1.1.2: Release notes](general/releases/v.1.1.2-release-notes.md)
   * [v.1.1.1: Release notes](general/releases/v.1.1.1-release-notes.md)
   * [v1.1.0: Release notes](general/releases/v1.1.0-release-notes.md)
+  * [v1.3.1: Release notes](general/releases/v1.3.1-release-notes.md)
+  * [v1.3.\* to v1.3.\* Migration notes](general/releases/v1.1.-to-v1.2.-migration-notes-1.md)
 * [Interoperability roadmap](general/interoperability-roadmap.md)
 * [Product roadmap](general/product-roadmap.md)
