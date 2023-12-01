@@ -125,6 +125,10 @@
   * [7.4 Setting up alerts](setup/7.-monitoring/7.4-setting-up-alerts.md)
   * [7.5 Managing a Docker Swarm](setup/7.-monitoring/7.5-managing-a-docker-swarm.md)
 
+***
+
+* [Self directed learning](self-directed-learning.md)
+
 ## General
 
 * [Contributing](general/contributing.md)
