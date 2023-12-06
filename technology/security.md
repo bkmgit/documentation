@@ -16,6 +16,16 @@ Gofore pentesters utilise proven pentesting methods of code review, automated en
 
 ### **Key security points**
 
+All servers must be protected behind a government virtual private network or VPN.  It should not be possible to browse to OpenCRVS on the open internet without successful configuration and access through a VPN client
+
+OpenCRVS Core team can provision a basic [Wireguard VPN](https://www.wireguard.com/) where an existing gov VPN does not exist but OpenCRVS Core team cannot advise on how to manage and maintain the VPN.
+
+Please note that despite the fact that OpenCRVS software is regularly penetration tested on every official release, every installation of OpenCRVS infrastructure and every country configuration of the VPN, servers and OpenCRVS software should be independently penetration tested by a 3rd party cyber security organisation.&#x20;
+
+{% hint style="danger" %}
+&#x20;OpenCRVS Core team accepts no liability for the security of your installation of OpenCRVS.
+{% endhint %}
+
 #### **Two factor authentication**
 
 Our mobile application and microservices are secure, protected by [2-Factor Authentication](https://en.wikipedia.org/wiki/Multi-factor\_authentication) utilising [OAuth JWT best practices](https://tools.ietf.org/id/draft-ietf-oauth-jwt-bcp-02.html).  2FA codes are sent to the user's mobile device in order log in.  These codes time out after 5 minutes preventing brute force attack and ensuring only authenticated users with access to authenticated hardware can access OpenCRVS.
