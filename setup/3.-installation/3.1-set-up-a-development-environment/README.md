@@ -1,9 +1,9 @@
-# 3.1 Set-up a development environment
+# 3.1 Set-up a local development environment
 
 {% hint style="warning" %}
 ### Important! Please read
 
-The following instructions will guide you on how to set up a local, demo development environment of OpenCRVS using our fictional country configuration: "Farajaland". &#x20;
+The following instructions will guide you on how to set up a local development environment of OpenCRVS using our fictional country configuration: "Farajaland". &#x20;
 
 We recommend that you setup OpenCRVS to work with our fictional country repo before proceeding to fork and create your own country configuration.
 
