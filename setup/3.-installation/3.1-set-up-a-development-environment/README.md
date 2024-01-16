@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 ### Important! Please read
 
-The following instructions will guide you on how to set up a local development environment of OpenCRVS using our fictional country configuration: "Farajaland". &#x20;
+The following instructions will guide you on how to set up a **local development environment** of OpenCRVS using our fictional country configuration: "Farajaland" on your **laptop**.
 
 We recommend that you setup OpenCRVS to work with our fictional country repo before proceeding to fork and create your own country configuration.
 
@@ -16,10 +16,4 @@ It is really important, regardless of your experience, that you carefully follow
 
 
 
-{% embed url="https://www.loom.com/share/6e649d5d32464523ac40b5d9c4c750d5" %}
-
-First, check out the OpenCRVS Core code:  [https://github.com/opencrvs/opencrvs-core](https://github.com/opencrvs/opencrvs-core)
-
-```
-git clone https://github.com/opencrvs/opencrvs-core.git
-```
+First, you will have to install some dependencies on your local computer
