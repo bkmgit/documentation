@@ -2,11 +2,11 @@
 
 OpenCRVS is an open-source digital solution for civil registration, designed specifically for low-resource settings and available as a Digital Public Good.
 
-This documentation can be used by governments, system integrators and development partners to design, configure, operate and maintain an OpenCRVS application that meets your country's needs.&#x20;
+This documentation can be used by governments, system integrators and development partners to design, configure, operate and maintain an OpenCRVS application that meets your country's needs.
 
-* to explore the OpenCRVS functionality, check out the [Product Specifications ](broken-reference)and the [Default Configuration](broken-reference) for Farajaland&#x20;
-* to understand how OpenCRVS works technically, go to [Technology](broken-reference)
-* to setup you own OpenCRVS instance and get it quickly into the hands of users, then go to [Setup](broken-reference)
+* to explore the OpenCRVS functionality, check out the [Product Specifications](product-specifications/functional-architecture.md) and the [Default Configuration for Farajaland](default-configuration/intro-to-farajaland.md)
+* to understand how OpenCRVS works technically, go to [Technology](technology/architecture/)
+* to setup you own OpenCRVS instance and get it quickly into the hands of users, then go to [Setup](setup/1.-establish-team.md)
 * to see what's coming next for OpenCRVS, see the [Product Roadmap](general/product-roadmap.md)
 
 {% hint style="info" %}
@@ -15,13 +15,13 @@ We recommend that you use this documentation in combination with the [CRVS Digit
 
 ### Why is OpenCRVS needed?
 
-Civil registration is the foundation of legal identity and rights-based service delivery. A Civil Registration and Vital Statistics (CRVS) system records the details of all major life events, such as births, deaths, marriage and divorce. It is an essential component of the "leave no one behind" agenda and without it working effectively, it is virtually impossible to ensure inclusive growth.&#x20;
+Civil registration is the foundation of legal identity and rights-based service delivery. A Civil Registration and Vital Statistics (CRVS) system records the details of all major life events, such as births, deaths, marriage and divorce. It is an essential component of the "leave no one behind" agenda and without it working effectively, it is virtually impossible to ensure inclusive growth.
 
 Unfortunately, in many countries CRVS systems are broken. 1 in 4 children under the age of 5 have not had their birth registered and hence do not officially exist. As a result, they struggle to access basic rights like education, healthcare and social protection. Two thirds of the world's deaths are not recorded, meaning that governments cannot design effective public health policies or measure their impact.
 
 Through our extensive research of CRVS systems around the world (including Pakistan, Bangladesh, Indonesia, Malawi, Uganda and Ghana) we understand many of the specific challenges that are often experienced by civil registration staff and the families trying to register vital events:
 
-* The civil registration processes are bureaucratic and time-consuming, with requests for supporting documents that family members do not possess and unofficial payments.&#x20;
+* The civil registration processes are bureaucratic and time-consuming, with requests for supporting documents that family members do not possess and unofficial payments.
 * Family members need to travel long distances to register vital events with several trips often required before the registration process is complete and a certificate is obtained.
 * Systems are not integrated so birth registration does not lead to automatic access to other rights e.g. vaccination programmes, enrolment in social protection schemes etc.
 
@@ -66,11 +66,11 @@ OpenCRVS is engineered for adaptability, allowing for configuration to comply wi
 We continue to stand by our original product commitments for OpenCRVS and these help steer the strategic direction of the product.
 
 1. Fully open-source, with no license fees or ties to specific vendors
-2. Configurable for all country contexts&#x20;
-3. Interoperable with other government systems&#x20;
+2. Configurable for all country contexts
+3. Interoperable with other government systems
 4. Highly accessible to ensure inclusion, even in remote areas
-5. Safe and secure to keep personal data protected&#x20;
-6. Easy to deploy and use in low resource settings&#x20;
+5. Safe and secure to keep personal data protected
+6. Easy to deploy and use in low resource settings
 7. Enabling new models of civil registration that can help achieve universal registration
 
 ### Design Principles
