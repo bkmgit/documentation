@@ -4,9 +4,7 @@ We have an automated script to generate [Github environments](https://docs.githu
 
 The environments will be named according to the naming convention identical to that we have described [here](../).&#x20;
 
-Specifically: **qa, staging, production** & for training purposes **development** (optional)**.** &#x20;
-
-The **backup** environment does not need a corresponding Github environment.
+Specifically: **qa, staging, production,** for training purposes **development** (optional), for backup server **backup** and for jump / bastion server **jump.** &#x20;
 
 Github Actions use these environments to access the secret keys and configurations used when installing software on servers and deploying OpenCRVS in the automated "continuous delivery" process.
 
@@ -190,13 +188,13 @@ To run the script, cd into your forked countryconfig repository and run the foll
 yarn environment:init --environment=<name: e.g. development, qa, production or staging>
 ```
 
-The script will ask you questions to connect to your Github repository, create an environment and populate that environment with all of the secrets and variables.
+The environment name parameter will become the name of your Github environment. The script will ask you questions to connect to your Github repository, create an environment and populate that environment with all of the secrets and variables.
 
 <figure><img src="../../../../.gitbook/assets/create-github-environment-1.png" alt=""><figcaption></figcaption></figure>
 
-The Docker Hub secrets will be saved as repository secrets that are available for all environments to use.  As you create additional environments, you do not need to update these as they will work across all environments.  You will see a prompt each time asking if you mean to uodate them.  You can just say no.
+The Docker Hub secrets will be saved as repository secrets that are available for all environments to use.  As you create additional environments, you do not need to update these as they will work across all environments.  You will see a prompt each time asking if you mean to update them.  You can just say no.
 
-The final question you can see in this screenshot is asking for the SSH\_KEY associated with the SSH\_USER "provision", which we created in [Step 3.3.1](../3.3.1-provision-your-server-nodes-with-ssh-access.md).  Normally [Vim](https://www.vim.org/) will be the default editor which opens in Linux, and you should paste in the corrslaesponding key after you click "Enter".  After pasting in the key, you can type the following command to save & exit [Vim](https://www.vim.org/):
+The final question you can see in this screenshot is asking for the SSH\_KEY associated with the SSH\_USER "provision", which we created in [Step 3.3.1](../3.3.1-provision-your-server-nodes-with-ssh-access.md).  Normally [Vim](https://www.vim.org/) will be the default editor which opens in Linux, and you should paste in the corresponding key after you click "Enter".  After pasting in the key, you can type the following command to save & exit [Vim](https://www.vim.org/):
 
 ```
 :wq!
