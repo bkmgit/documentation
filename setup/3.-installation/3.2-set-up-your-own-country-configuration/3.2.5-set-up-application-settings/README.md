@@ -100,16 +100,14 @@ The OpenCRVS Core Login application loads the following config js files before c
 
 ```
 window.config = {
-  AUTH_API_URL: 'http://localhost:4040/',
+  AUTH_API_URL: 'http://localhost:7070/auth/',
   CONFIG_API_URL: 'http://localhost:2021',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
   LANGUAGES: 'en,fr',
-  AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',
   CLIENT_APP_URL: 'http://localhost:3000/',
   COUNTRY_CONFIG_URL: 'http://localhost:3040',
-  SENTRY: '',
-  LOGROCKET: ''
+  SENTRY: ''
 }
 ```
 
@@ -127,34 +125,20 @@ For example, if you wanted to support Spanish and English, with Spanish being th
 es,en
 ```
 
-**AVAILABLE\_LANGUAGES\_SELECT:** The app needs to populate available languages in a language select before it has had a chance to load any language content. This property allows you to customise the **options** & **labels** in the select. This value is a comma separated string of the following:
 
-a) Firstly the [ISO 639-1](https://en.wikipedia.org/wiki/List\_of\_ISO\_639-1\_codes) language code for a single translation you have set up in step 3.2.7 Set-up language content followed by a colon.
-
-b) After the colon, the displayName for the language.
-
-For example, if you wanted to support Spanish and English, with Spanish being the default this string should be:
-
-```
-es:Español,en:English
-```
-
-The application can log errors to Sentry should it encounter any problems accessing the backend.  _LOGROCKET will be deprecated in OpenCRVS v1.4._  Leave these options alone as empty strings as they are not used when running in localhost. They are populated dynamically from Github secrets in the server [deploy step here](../../3.3-set-up-a-server-hosted-environment/3.3.6-deploy-automated-and-manual.md).
 
 **Login app - server:** [**login-config.prod.js**](https://github.com/opencrvs/opencrvs-countryconfig/blob/develop/src/login-config.prod.js)
 
 ```
 window.config = {
-  AUTH_API_URL: 'https://auth.{{hostname}}/',
+  AUTH_API_URL: 'https://gateway.{{hostname}}/auth/',
   CONFIG_API_URL: 'https://config.{{hostname}}',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
   LANGUAGES: 'en,fr',
-  AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',
   CLIENT_APP_URL: 'https://register.{{hostname}}/',
   COUNTRY_CONFIG_URL: 'https://countryconfig.{{hostname}}',
-  SENTRY: '{{sentry}}',
-  LOGROCKET: ''
+  SENTRY: '{{sentry}}'
 }
 ```
 
@@ -162,7 +146,7 @@ As you ca**n see, the server config file contains the same settings.**
 
 You may notice that localhost is replaced by your domain name dynamically in handlebars. **Do not edit the URLs.** We have taken care of this substitution for you in step [3.3.5 Deploy](../../3.3-set-up-a-server-hosted-environment/3.3.6-deploy-automated-and-manual.md)
 
-You must set the **COUNTRY, LANGUAGES & AVAILABLE\_LANGUAGES\_SELECT** values only.
+You must set the **COUNTRY & LANGUAGES** values only.
 
 **Client app - localhost development:** [**client-config.js**](https://github.com/opencrvs/opencrvs-countryconfig/blob/develop/src/client-config.js)
 
@@ -176,10 +160,8 @@ window.config = {
   COUNTRY_CONFIG_URL: 'http://localhost:3040',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
-  AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',
   LANGUAGES: 'en,fr',
   SENTRY: '',
-  LOGROCKET: '',
   // Use the values in comments when Metabase is running locally
   // http://localhost:4444/public/dashboard/acae0527-74be-4804-a3ee-f8b3c9c8784c#bordered=false&titled=false&refresh=300
   LEADERBOARDS_DASHBOARD_URL: '',
@@ -190,7 +172,7 @@ window.config = {
 }
 ```
 
-Following the same process as you did for the local development Login app config file, you must set the **COUNTRY, LANGUAGES & AVAILABLE\_LANGUAGES\_SELECT** values, and can optionally uncomment **LEADERBOARDS\_DASHBOARD\_URL, REGISTRATIONS\_DASHBOARD\_URL** and **STATISTICS\_DASHBOARD\_URL** if you wish to run metabase dashboards locally.  Refer to step [3.2.5.2 Configuring Metabase Dashboards](broken-reference) for more instructions.
+Following the same process as you did for the local development Login app config file, you must set the **COUNTRY & LANGUAGES** values, and can optionally uncomment **LEADERBOARDS\_DASHBOARD\_URL, REGISTRATIONS\_DASHBOARD\_URL** and **STATISTICS\_DASHBOARD\_URL** if you wish to run metabase dashboards locally.  Refer to step [3.2.5.2 Configuring Metabase Dashboards](broken-reference) for more instructions.
 
 **Client app - server:** [**client-config.prod.js**](https://github.com/opencrvs/opencrvs-countryconfig/blob/develop/src/client-config.prod.js)
 
@@ -204,10 +186,8 @@ window.config = {
   COUNTRY_CONFIG_URL: 'https://countryconfig.{{hostname}}',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
-  AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',
   LANGUAGES: 'en,fr',
   SENTRY: '{{sentry}}',
-  LOGROCKET: '',
   LEADERBOARDS_DASHBOARD_URL:
     'https://metabase.{{hostname}}/public/dashboard/acae0527-74be-4804-a3ee-f8b3c9c8784c#bordered=false&titled=false&refresh=300',
   REGISTRATIONS_DASHBOARD_URL:
@@ -217,5 +197,5 @@ window.config = {
 }
 ```
 
-Following the same process as you did for the production Login app config file, you must set the **COUNTRY, LANGUAGES & AVAILABLE\_LANGUAGES\_SELECT** values.
+Following the same process as you did for the production Login app config file, you must set the **COUNTRY & LANGUAGES** values.
 
