@@ -129,7 +129,7 @@ In OpenCRVS v1.3.\* we have some large data migrations to run. If you have been 
 {% endhint %}
 
 1. If you have hosted an entirely new v1.2\* OpenCRVS on a server, and you have a successful restoration from a v1.2\* backup running on this server, and you have a 2nd copy of the backup of your configuration hosted elsewhere just in case, you are ready to proceed.
-2. Configure a new set of v1.3.\* servers following **ALL** the [steps 3.3.1](../../../setup/3.-installation/3.3-set-up-a-server-hosted-environment/3.3.1-provision-your-server-nodes-with-ssh-access.md) to [3.3.5](../../../setup/3.-installation/3.3-set-up-a-server-hosted-environment/3.3.5-setup-dns-a-records.md).
+2. Configure a new set of v1.3.\* servers following **ALL** the [steps 3.3.1](../../../setup/3.-installation/3.3-set-up-a-server-hosted-environment/3.3.1-provision-your-server-nodes-with-ssh-access.md) to [3.3.5](../../../setup/3.-installation/3.3-set-up-a-server-hosted-environment/3.3.5-setup-dns-a-records/).
 3. Deploy v1.3\* following the[ new deploy instructions](../../../setup/3.-installation/3.3-set-up-a-server-hosted-environment/3.3.6-deploy-automated-and-manual.md) including the new secrets
 4. Check you can login to OpenCRVS v1.3 successfully.
 5. OpenCRVS v1.3 is successfully installed, so now we must empty the database and restore it with your v1.2\* data. Follow these manual clear, restore and migrate process using these [steps](broken-reference).

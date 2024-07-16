@@ -20,7 +20,7 @@ In order to expose OpenHIM to be accessible on the public internet, you must com
 
 You must enter a comma separated list of trusted IP addresses to the whitelist property.
 
-You need to create a [DNS](../../setup/3.-installation/3.3-set-up-a-server-hosted-environment/3.3.5-setup-dns-a-records.md) record to expose the _api.\<your-domain>_ endpoint to OpenHIM.
+You need to create a [DNS](../../setup/3.-installation/3.3-set-up-a-server-hosted-environment/3.3.5-setup-dns-a-records/) record to expose the _api.\<your-domain>_ endpoint to OpenHIM.
 
 Now you can create your own microservice [Mediator](http://openhim.org/docs/dev-guide/developing-mediators/) and register it with OpenHIM following the [OpenHIM documentation.](http://openhim.org/docs/dev-guide/developing-mediators/)
 
