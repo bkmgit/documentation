@@ -26,9 +26,9 @@ Our server SSH access, mobile application and microservices are secure, protecte
 
 User types and access controls are managed in order to segregate personally identifiable data to only to the users who need it. These user types can be set up in the Team GUI accessible by National and Local System Administrators.  Every access to a specific declaration or registration is audited in order to track who viewed the data thus protecting citizen rights.  All access to OpenCRVS servers and infrastructure health is logged and monitored in [Kibana](https://www.elastic.co/observability/infrastructure-monitoring).  SSH access to servers requires Google Authenticator 2FA.
 
-#### Ansible provisioned firewall & VPN
+#### Ansible provisioned firewall & SSH 2FA (VPN requirement)
 
-OpenCRVS automatically provisions a secure firewall to OpenCRVS on each node.  OpenCRVS should only be installed behind a separately configured and managed, government owned VPN.  OpenCRVS can automatically provision a Wireguard VPN for use in pilot projects only - not for use in production.
+OpenCRVS automatically provisions a secure firewall to OpenCRVS on each node.  SSH users are configured to use Google Authenticator 2FA when connecting via a Terminal.  Every SSH access prompts an automated alert to technical teams via Slack.  **Note: OpenCRVS should only be installed behind a separately configured and managed, government owned VPN.** &#x20;
 
 #### TLS certificate
 
