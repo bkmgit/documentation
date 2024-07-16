@@ -66,7 +66,7 @@ Alternatively you could consider purchasing a long term SSL certificate and manu
 
 The following "recipes" are not meant to be exhaustive, but simply describe some examples you may wish to follow.  Every country will have unique network, domain name & management considerations to pay attention to.
 
-For each recipe, search the [docker-compose.{YOUR ENVIRONMENT}-deploy.yml](https://github.com/opencrvs/opencrvs-countryconfig/tree/develop/infrastructure) files for each environment to find the block below, to amend configurations for each environment: **qa, production & staging.**  Alternatively, you can remove each individual block and have a single block in [docker-compose-depoy.yml](https://github.com/opencrvs/opencrvs-countryconfig/blob/dfbf4c6a0b2962015d152c2adb4a0f8bc6038bdd/infrastructure/docker-compose.deploy.yml#L13) for a generic approach applied to all environments.
+For each recipe, search the [docker-compose.{YOUR ENVIRONMENT}-deploy.yml](https://github.com/opencrvs/opencrvs-countryconfig/tree/develop/infrastructure) files for each environment to find the block below.  In this block, you can amend configurations for each individual environment: **qa, production & staging.**  Alternatively, you can remove each individual block and have a single block in [docker-compose-deploy.yml](https://github.com/opencrvs/opencrvs-countryconfig/blob/dfbf4c6a0b2962015d152c2adb4a0f8bc6038bdd/infrastructure/docker-compose.deploy.yml#L13) that will apply a generic approach applied to all environments.
 
 ```
 traefik:
