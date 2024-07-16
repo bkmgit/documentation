@@ -94,22 +94,6 @@ ElasticSearch is also used with [Kibana](https://www.elastic.co/kibana) for appl
 The hyper-efficient [Influx](https://www.influxdata.com) "time series database" is used in our stack for "big data" performance insights. Millisecond level query times facilitate civil registration statistical queries over years of data, disaggregated by gender, location and configurable operational and statistical parameters.\
 
 
-<div align="left">
-
-<img src="https://static.wixstatic.com/media/93440e_bdd011d5e3744e7b84684e6789c1f5c7~mv2.png/v1/fill/w_136,h_40,al_c,q_80,usm_0.66_1.00_0.01/openhim-logo-green.webp" alt="">
-
-</div>
-
-### **OpenHIM enterprise service bus, interoperability Layer**
-
-The [OpenHIM (Health Information Mediator)](https://github.com/jembi/openhim-core-js) is the interoperability layer of choice in the [Open Health Information Exchange (OpenHIE) architectural standard](https://ohie.org/) and interoperates natively using [HL7 (Fast Healthcare Interoperability Resources) or FHIR](https://www.hl7.org/fhir/).&#x20;
-
-OpenHIM is built in NodeJS and is designed to ease interoperability between OpenCRVS and external healthcare systems. It provides external access to the system via secure APIs. OpenHIM channels and governs internal transactions, routing, orchestrating and translating requests into [FHIR](https://www.hl7.org/fhir/) between services and the database layer.
-
-We use OpenHIM to receive birth and death notifications from a hospital setting, and expose registration events to any other healthcare system via an API gateway e.g. [DHIS2 health Information Management](https://dhis2.org/).
-
-###
-
 ### OpenCRVS microservice packages
 
 The core of OpenCRVS is a monorepo organised using [Lerna](https://github.com/lerna/lerna). Each package represents a single  microservice.  Each microservice has over 80% unit test coverage in [Jest](https://jestjs.io/). Following the [microservice](https://en.wikipedia.org/wiki/Microservices), 1 service per container model, every package is independently scalable in a single [docker](https://www.docker.com/) container.
@@ -130,9 +114,11 @@ The microservice API Gateway uses [GraphQL](https://graphql.org/) . [GraphQL](ht
 
 </div>
 
-Client applications are built using [React](https://reactjs.org/) and [progressive web application](https://developer.mozilla.org/en-US/docs/Web/Progressive\_web\_apps/Introduction) technology. This means that we can take advantage of offline functionality and native mobile features using [Workbox](https://developers.google.com/web/tools/workbox), without the overhead of maintaining multiple web and mobile codebases and respective App/Play Store releases.
+<div align="left">
 
-In remote areas, registrars can save a configurable number of registrations offline on their mobile phone, using [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB\_API).
+<img src="https://static.wixstatic.com/media/93440e_8452ed95c717459e86c95ed0e17378ad~mv2.png/v1/fill/w_136,h_70,al_c,q_80,usm_0.66_1.00_0.01/PWA-Progressive-Web-App-Logo.webp" alt="">
+
+</div>
 
 <div align="left">
 
@@ -140,12 +126,20 @@ In remote areas, registrars can save a configurable number of registrations offl
 
 </div>
 
+Client applications are built using [React](https://reactjs.org/) and [progressive web application](https://developer.mozilla.org/en-US/docs/Web/Progressive\_web\_apps/Introduction) technology. This means that we can take advantage of offline functionality and native mobile features using [Workbox](https://developers.google.com/web/tools/workbox), without the overhead of maintaining multiple web and mobile codebases and respective App/Play Store releases.
+
+In remote areas, registrars can save a configurable number of registrations offline on their mobile phone, using [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB\_API).
+
+
+
 <div align="left">
 
-<img src="https://static.wixstatic.com/media/93440e_8452ed95c717459e86c95ed0e17378ad~mv2.png/v1/fill/w_136,h_70,al_c,q_80,usm_0.66_1.00_0.01/PWA-Progressive-Web-App-Logo.webp" alt="">
+<img src="https://static.wixstatic.com/media/93440e_bdd011d5e3744e7b84684e6789c1f5c7~mv2.png/v1/fill/w_136,h_40,al_c,q_80,usm_0.66_1.00_0.01/openhim-logo-green.webp" alt="">
 
 </div>
 
+### **(Optional) OpenHIM enterprise service bus, interoperability Layer**
 
+The [OpenHIM (Health Information Mediator)](https://github.com/jembi/openhim-core-js) is the interoperability layer of choice in the [Open Health Information Exchange (OpenHIE) architectural standard](https://ohie.org/) and interoperates natively using [HL7 (Fast Healthcare Interoperability Resources) or FHIR](https://www.hl7.org/fhir/).&#x20;
 
-####
+OpenHIM is built in NodeJS and is designed to ease interoperability between OpenCRVS and external healthcare systems. It provides external access to the system via secure APIs. OpenHIM is fully compatible with OpenCRVS and can be optionally included in the stack.
